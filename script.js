@@ -20,7 +20,7 @@ window.onload = function() {
     drawScore();
     document.addEventListener("keyup", changeDirection);
     
-    myInterval = setInterval(update, 125); //125ms or 8 times a second
+    myInterval = setInterval(update, 200); //200ms or 5 times a second
 }
 
 function drawGrid() {
@@ -158,7 +158,7 @@ function restartGame(e) {
         drawGrid();
         placeApple();
         drawApple();
-        myInterval = setInterval(update, 125);
+        myInterval = setInterval(update, 200);
     }
 }
 
